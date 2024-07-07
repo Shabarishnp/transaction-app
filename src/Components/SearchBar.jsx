@@ -1,7 +1,7 @@
 import React from "react";
 import { TextField } from "@mui/material";
 
-const SearchBox = ({ value, onChange }) => {
+const SearchBar = ({ value, onChange }) => {
   return (
     <TextField
       label="Search Transactions"
@@ -14,4 +14,4 @@ const SearchBox = ({ value, onChange }) => {
   );
 };
 
-export default SearchBox;
+export default SearchBar;

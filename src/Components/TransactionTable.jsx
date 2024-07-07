@@ -6,11 +6,12 @@ import {
   TableContainer,
   TableHead,
   TableRow,
+  Paper,
 } from "@mui/material";
 
 const TransactionTable = ({ transactions }) => {
   return (
-    <TableContainer>
+    <TableContainer component={Paper}>
       <Table>
         <TableHead>
           <TableRow>
