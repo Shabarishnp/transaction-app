@@ -6,6 +6,7 @@ import TransactionTable from "./Components/TransactionTable.jsx";
 import PaginationControl from "./Components/PagenationCtrl.jsx";
 import TransactionStatistics from "./Components/TransactionStatistics.jsx";
 import BarChart from "./Components/BarChart.jsx";
+import "./App.css";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -68,7 +69,12 @@ const App = () => {
 
   return (
     <Container>
-      <Typography variant="h4" component="h1" gutterBottom>
+      <Typography
+        variant="h4"
+        component="h1"
+        gutterBottom
+        className="dashboard-title"
+      >
         Transaction Dashboard
       </Typography>
       <SearchBar

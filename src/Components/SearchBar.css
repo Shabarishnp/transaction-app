@@ -1,0 +1,9 @@
+.search-bar {
+  align-self: flex-start;
+  width: fit-content;
+}
+
+.search-bar .MuiOutlinedInput-root {
+  background-color: rgb(233, 206, 52);
+  border-radius: 25px;
+}

@@ -1,0 +1,15 @@
+/* TransactionStatistics.css */
+.transaction-statistics-card {
+  background-color: gold;
+  margin-top: 16px;
+}
+
+.transaction-statistics-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transaction-statistics-typography {
+  margin: 4px 0;
+}
