@@ -1,5 +1,6 @@
 import React from "react";
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
+import "./MonthSelection.css";
 
 const MonthSelection = ({ month, onChange }) => {
   const months = [
@@ -18,21 +19,23 @@ const MonthSelection = ({ month, onChange }) => {
   ];
 
   return (
-    <FormControl fullWidth margin="normal">
-      <InputLabel id="month-label">Month</InputLabel>
-      <Select
-        labelId="month-label"
-        value={month}
-        onChange={onChange}
-        label="Month"
-      >
-        {months.map((month, index) => (
-          <MenuItem key={index} value={month}>
-            {month}
-          </MenuItem>
-        ))}
-      </Select>
-    </FormControl>
+    <div className="month-selection">
+      <FormControl fullWidth margin="normal">
+        <InputLabel id="month-label">Month</InputLabel>
+        <Select
+          labelId="month-label"
+          value={month}
+          onChange={onChange}
+          label="Month"
+        >
+          {months.map((month, index) => (
+            <MenuItem key={index} value={month}>
+              {month}
+            </MenuItem>
+          ))}
+        </Select>
+      </FormControl>
+    </div>
   );
 };
 

@@ -1,0 +1,8 @@
+.month-selection {
+  width: 350px;
+}
+
+.month-selection .MuiFormControl-root {
+  background-color: rgb(233, 206, 52);
+  border-radius: 10px;
+}
